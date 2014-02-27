@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <title>test</title>
+  
+  <container type="horizontal" id="1" position="1" height="1" width="1">
+    <view id="2" type="tick" finance_code="600000.1" position="1" width="0.7"/>
+
+    <container id="3" type="vertical" position="2" width="0.3">
+        <view id="4" type="realtime" finance_code="600000.1" height="0.5" position="1"/>
+        <view id="5" type="detail" finance_code="600000.1" height="0.5" position="2"/>
+    </container>
+    
+    
+  </container>
+</page>

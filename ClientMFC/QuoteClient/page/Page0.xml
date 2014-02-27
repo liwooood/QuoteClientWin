@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <title>test</title>
+  
+  <container type="vertical" id="1" position="1" height="1" width="1">
+    <view id="2" type="table" market="SH_A" position="1" height="0.5"/>
+
+    <container id="3" type="horizontal" position="2" height="0.5">
+      
+      <container id="4" type="horizontal" width="0.5" position="1">
+        <view id="6" type="kline" finance_code="600000.1" time_period="day" idicator="macd" width="0.5" position="1"/>
+        <view id="7" type="tick" finance_code="600000.1" width="0.5" position="2"/>
+      </container>
+
+      <container id="5" type="horizontal" width="0.5" position="2">
+        <view id="8" type="realtime" finance_code="600000.1" width="0.5" position="1"/>
+        <view id="9" type="detail" finance_code="600000.1" width="0.5" position="2"/>
+      </container>
+    </container>
+    
+  </container>
+</page>

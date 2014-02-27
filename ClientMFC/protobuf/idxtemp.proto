@@ -1,0 +1,282 @@
+// See README.txt for information and build instructions.
+
+package cssweb.kline.mid;
+
+message MA {
+  required double sumMa4 = 1;
+  required double sumMa9 = 2;        
+  required double sumMa19 = 3;
+  required double sumMa59 = 4;	
+  required double sumMavol4 = 5;
+  required double sumMavol9 = 6;
+}
+
+message MACD {
+  required float emaShort = 1;
+  required float emaLong = 2;        
+  required float dea = 3;
+}
+
+message CCI {
+  repeated float typ = 1;  
+}
+
+message BIAS {
+  required float sum5 = 1;
+  required float sum11 = 2;        
+  required float sum23 = 3;
+}
+
+message KDJ {
+  required float hhv = 1;
+  required float llv = 2;
+  repeated float hhvs = 3;
+  repeated float llvs = 4;
+  required float k = 5;
+  required float d = 6;
+}
+
+message RSI {
+  required float smaMax1 = 1;
+  required float smaMax2 = 2;
+  required float smaMax3 = 3;
+  required float smaAbs1 = 4;
+  required float smaAbs2 = 5;
+  required float smaAbs3 = 6;
+}
+
+message OBV {
+  required double obv = 1;
+  required double sumObv29 = 2;
+  repeated double obvs = 3;
+}
+
+message BOLL {
+  required double sumClose = 1;
+  required double sumPowClose = 2;
+}
+
+message PSY {
+  required int32 psyCount11 = 1;
+  repeated int32 psyCounts = 2;
+  required float sumPsy = 3;
+  repeated float psys = 4;
+}
+
+message ROC {
+  required float refClose12 = 1;
+  required float sumRoc = 2;
+  repeated float rocs = 3;
+}
+
+message WR {
+  required float llv = 1;
+  required float hhv = 2;
+  required float llv2 = 3;
+  required float hhv2 = 4;
+  repeated float hhvs = 5;
+  repeated float llvs = 6;
+  repeated float hhvs2 = 7;
+  repeated float llvs2 = 8;
+}
+
+message VR {
+  required double sum1 = 1;
+  required double sum2 = 2;
+  required double sumVr = 3;
+  repeated double vrs = 4;
+}
+
+message EXPMA {
+	required float prevEma = 1;
+}
+
+message ARBR {
+	
+  required float sum1 = 1;
+  required float sum2 = 2;
+  required float sum3 = 3;
+  required float sum4 = 4;
+  
+  required float top1 = 5;
+  required float top2 = 6;
+  required float top3 = 7;
+  required float top4 = 8;
+  
+  required float prevClose = 9;
+}
+
+message CR {
+  required float prevMid = 1;
+  required float sum1 = 2;
+	required float sum2 = 3;
+	required float top1 = 4;
+	required float top2 = 5;
+	required float nextMa1 = 6;
+	required float nextMa2 = 7;
+	required float nextMa3 = 8;
+	repeated float crs = 9;
+}
+
+message CDP {
+  required float prevHigh = 1;
+  required float prevLow = 2;
+  required float prevClose = 3;
+}
+
+message DMA {
+  required float sumMa9 = 1;
+  required float sumMa49 = 2;
+  required float sumDdd = 3;
+  repeated float ddds = 4;
+}
+
+message MTM {
+  required float close4 = 1;
+  required float sumMtm = 2;
+  repeated float mtms = 3;  
+}
+
+message BBI {
+  required float sum1 = 1;
+  required float sum2 = 2;
+  required float sum3 = 3;
+  required float sum4 = 4;
+  
+  required float top1 = 5;
+  required float top2 = 6;
+  required float top3 = 7;
+  required float top4 = 8;
+}
+
+message TRIX {
+  required float prevEma1 = 1;
+  required float prevEma2 = 2;
+  required float prevTr = 3;
+	required float sumTr = 4;
+	repeated float trs = 5;
+}
+
+message ZLJC {
+  required float prevLow = 1;
+  required float prevJcs = 2;
+  required float sumJcm = 3;
+  required float sumJcl = 4;
+	repeated float jcms = 5;
+	repeated float jcls = 6;
+}
+
+message ASI {
+  required float prevClose = 1;
+  required float prevLow = 2;
+  required float prevOpen = 3;
+  required float sumSi = 4;
+  required float sumAsi = 5;
+	repeated float sis = 6;
+	repeated float asis = 7;
+}
+
+message DMI {
+  required float prevClose = 1;
+  required float prevLow = 2;
+  required float prevHigh = 3;
+  required float sumTr = 4;
+  repeated float midtrs = 5;
+	required float sumDmp = 6;
+	repeated float middmps = 7;
+	required float sumDmm = 8;
+	repeated float middmms = 9;
+	required float sumAdx = 10;
+	repeated float midadxs = 11;
+	repeated float adxs = 12;
+}
+
+message PVT {
+	required float prevClose = 1;
+	required double prevPvt = 2;
+}
+
+message PBX {
+	required float prevEma1 = 1;
+	required float prevEma2 = 2;
+	required float prevEma3 = 3;
+	required float prevEma4 = 4;
+	required float prevEma5 = 5;
+	required float prevEma6 = 6;
+	
+	required float sumShort1 = 7;
+	required float sumShort2 = 8;
+	required float sumShort3 = 9;
+	required float sumShort4 = 10;
+	required float sumShort5 = 11;
+	required float sumShort6 = 12;
+	
+	required float sumLong1 = 13;
+	required float sumLong2 = 14;
+	required float sumLong3 = 15;
+	required float sumLong4 = 16;
+	required float sumLong5 = 17;
+	required float sumLong6 = 18;
+}
+
+message SKDJ {
+  required float hhv = 1;
+  required float llv = 2;
+  repeated float hhvs = 3;
+  repeated float llvs = 4;
+  required float k = 5;
+  required float d = 6;
+  required float fastk = 7;
+}
+
+
+message MIDVAL {
+  required string date = 1;
+  required float open = 2;
+  required float high = 3;
+  required float low = 4;
+  required float close = 5;
+  required float zjcj = 6;
+  required double cjsl = 7;
+  required double cjje = 8;
+}
+
+message KLINEIDX {
+	required int32 date = 1;
+	required int32 offset = 2;
+}
+    
+message TEMP {
+  optional MA ma = 1;
+  optional MACD macd = 2;
+  optional CCI cci = 3;
+  optional BIAS bias = 4;
+  optional KDJ kdj = 5;
+  optional RSI rsi = 6;
+  optional OBV obv = 7;
+  optional BOLL boll = 8;
+  optional PSY psy = 9;
+  optional ROC roc = 10;
+  optional WR  wr = 11;
+  optional VR  vr = 12;
+  optional ARBR arbr = 13;
+  optional CR  cr = 14;
+  optional CDP cdp = 15;
+  optional DMA dma = 16;
+  optional MTM mtm = 17;
+  optional BBI bbi = 18;
+  optional TRIX trix = 19;
+  optional ZLJC zljc = 20;
+  optional ASI asi = 21;
+  optional EXPMA ema = 22;
+  optional DMI dmi = 23;
+  optional PVT pvt = 24;
+  optional PBX pbx = 25;
+  optional SKDJ skdj = 26;
+  
+  optional int32 file = 27;
+  optional string quotetime = 28;
+  optional MIDVAL midval = 29;
+  optional int32 linenum = 30;
+  repeated KLINEIDX klineIdx = 31;
+}

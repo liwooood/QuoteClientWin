@@ -1,0 +1,3 @@
+setparent
+setwindowslong
+movewindow

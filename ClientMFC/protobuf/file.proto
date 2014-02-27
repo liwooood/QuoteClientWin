@@ -1,0 +1,118 @@
+package quote;
+
+//证券代码列表
+message FileStock{
+	message StockDetail{
+		required string secucode = 1;
+		required string secuname = 2;
+		repeated string secupy = 3;
+		required int32 secutype = 4;
+		required int32 coefficient = 5;
+		required float preclose = 6;
+	}
+	repeated StockDetail stockdetail = 1;
+}
+
+//财务数据
+message FileFinance{
+	message FinanceDetail{
+		required string secucode = 1;
+		optional int64 ltsl = 2;
+		optional float gb = 3;
+		optional float jz = 4;
+		optional float jlr = 5;
+		optional int32 syjd = 6;
+		optional float fullprice = 7;
+	}
+	repeated FinanceDetail financedetail = 1;
+}
+
+//基金财务数据
+message FileFinanceFund{
+	message FinanceFundDetail{
+		required string secucode = 1;
+		required string secuname = 2;
+		repeated string secupy = 3;
+		required int32 secutype = 4;
+		optional float unitnav = 5;
+		optional float accuunitnav = 6;
+		optional float changerate = 7;
+		optional float changeratew = 8;
+		optional float changeratem = 9;
+		optional float changerate3m = 10;
+		optional float changerate6m = 11;
+		optional float changeratey = 12;
+		optional float dailyreturn = 13;
+		optional float annuyield = 14;
+		optional float fundvol = 15;
+		optional int32 managementcomid = 16;
+		optional string managementcom = 17;
+		optional string fundmanager = 18;
+		optional string fundcustodian = 19;
+		optional int32 starrank3 = 20;
+		optional int32 starrank5 = 21;
+	}
+	repeated FinanceFundDetail financefunddetail = 1;
+}
+
+//重点指数及样本表现
+message FileZsbx{
+	message ZsbxDetail{
+		required string secucode = 1;
+		optional int32 ybsl = 2;
+		optional float ybjj = 3;
+		optional float pjgb = 4;
+		optional float zsz = 5;
+		optional float zb = 6;
+		optional float jtsyl = 7;
+	}
+	repeated ZsbxDetail zsbxdetail = 1;
+}
+
+//板块分类
+message FileBlock{
+	message Block{
+		enum Name{
+			INDUSTRY = 1;
+			CSRCINDUSTRY = 2;
+			AREA = 3;
+			CONCEPT = 4;
+		}
+		required Name name=1;
+		message BlockDetail{
+			required int32 blockid=1;
+			required string blockname=2;
+		}
+		repeated BlockDetail blockdetail=2;
+	}
+	repeated Block block = 1;
+}
+
+message FileBlockStock{
+	message BlockStock{
+		required int32 blockid=1;
+		message BlockStockDetail{
+			required string secucode=1;
+			required int32 exchange=2;
+		}
+		repeated BlockStockDetail blockstockdetail=2;
+	}
+	repeated BlockStock blockstock = 1;
+}
+
+//MD5
+message FileMd5{
+	message Md5{
+		enum FileName{
+			SH_STOCK = 1;
+			SZ_STOCK = 2;
+			FINANCE_DATA = 3;
+			KF_FINANCE = 4;
+			BLOCK_DATA = 5;
+			BLOCKSTOCK_DATA = 6;
+		}
+		required FileName filename = 1;
+		required string md5code = 2;
+	}
+	repeated Md5 md5 = 1;
+}

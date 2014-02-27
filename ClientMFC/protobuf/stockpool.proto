@@ -1,0 +1,106 @@
+package quote;
+
+message Stock{
+	required string secucode = 1;
+	required int32 exchange = 2;
+	optional bool remove = 3;
+	required int32 pooltype = 4;
+	required int32 poolgroup = 5;
+	optional int32 seqno = 6;
+}
+
+message Pool{
+	optional string poolname = 1;
+	required int32 pooltype = 2;
+	required int32 poolgroup = 3;
+	optional bool remove = 4;
+	optional int32 seqno = 5;
+}
+	
+message PoolType{
+	required int32 pooltype = 1;
+	optional string name = 2;
+	optional bool remove = 3;
+	optional int32 seqno = 4;
+}
+	
+//新增证券品种
+message AddStockRequest{
+	required string custid = 1;
+	required string orgid = 2;
+	repeated Stock stock = 3;
+}
+
+message AddStockResponse{
+	required string updatetime = 1;
+}
+
+//更新证券品种
+message UpdateStockRequest{
+	required string custid = 1;
+	required string orgid = 2;
+	repeated Stock stock = 3;
+}
+
+message UpdateStockResponse{
+	required string updatetime = 1;
+}
+
+//查询证券品种变动
+message QueryStockRequest{
+	required string custid = 1;
+	required string orgid = 2;
+	optional string synctime = 3;
+	optional int32 pooltype = 4;
+	optional int32 poolgroup = 5;
+}
+
+message QueryStockResponse{
+	required string servertime = 1;
+	repeated Stock stock = 2;
+}
+
+//更新股票池
+message UpdatePoolRequest{
+	required string custid = 1;
+	required string orgid = 2;
+	repeated Pool pool = 3;
+}
+
+message UpdatePoolResponse{
+	required string updatetime = 1;
+}
+
+//查询股票池变动
+message QueryPoolRequest{
+	required string custid = 1;
+	required string orgid = 2;
+	optional string synctime = 3;
+	optional int32 pooltype = 4;
+	optional int32 poolgroup = 5;
+}
+
+message QueryPoolResponse{
+	required string servertime = 1;
+	repeated Pool pool = 2;
+}
+
+//更新股票池类型
+message UpdatePoolTypeRequest{
+	repeated PoolType pooltype = 1;
+}
+
+message UpdatePoolTypeResponse{
+	required string updatetime = 1;
+}
+
+//查询股票池类型变动
+message QueryPoolTypeRequest{
+	optional string synctime = 1;
+	optional int32 pooltype = 2;
+}
+
+message QueryPoolTypeResponse{
+	required string servertime = 1;
+	repeated PoolType pooltype = 2;
+}

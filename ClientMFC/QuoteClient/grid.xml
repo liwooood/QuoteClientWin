@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grid>
+  <column id="0" name="id" caption="序号" width="50"></column>
+  <column id="1" name="code" caption="代码" width="70"></column>
+  <column id="2" name="name" caption="名称" width="65"></column>
+  <column id="3" name="xj" caption="现价" width="70"></column>
+  <column id="4" name="zf" caption="涨幅%" width="70"></column>
+  <column id="5" name="zd" caption="涨跌" width="70"></column>
+  <column id="6" name="bid1" caption="买价" width="60"></column>
+  <column id="7" name="ask1" caption="卖价" width="60"></column>
+  <column id="8" name="xl" caption="现量" width="60"></column>
+  <column id="9" name="cjsl" caption="总量" width="80"></column>
+  <column id="10" name="hs" caption="换手%" width="70"></column>
+  <column id="11" name="open" caption="今开" width="70"></column>
+  <column id="12" name="high" caption="最高" width="70"></column>
+  <column id="13" name="low" caption="最低" width="70"></column>
+  <column id="14" name="close" caption="昨收" width="70"></column>
+  <column id="15" name="cjje" caption="总额" width="80"></column>
+  <column id="16" name="zhenfu" caption="振幅%" width="60"></column>
+  <column id="17" name="lb" caption="量比" width="70"></column>
+  <column id="18" name="wb" caption="委比%" width="70"></column>
+  <column id="19" name="wc" caption="委差" width="70"></column>
+</grid>

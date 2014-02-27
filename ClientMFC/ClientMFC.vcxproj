@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1011EB88-BD11-4CA6-BE07-8AB1791C3662}</ProjectGuid>
+    <RootNamespace>ClientMFC</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Boost\1.55\include\boost-1_55;D:\protobuf\protobuf-2.4.1\src\;.\protobuf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>.\QuoteClient\QuoteClientD.exe</OutputFile>
+      <AdditionalLibraryDirectories>D:\boost\1.55\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseContainerWnd.h" />
+    <ClInclude Include="BaseControlWnd.h" />
+    <ClInclude Include="BaseWnd.h" />
+    <ClInclude Include="ClientMFC.h" />
+    <ClInclude Include="ColInfo.h" />
+    <ClInclude Include="ColorUtil.h" />
+    <ClInclude Include="ConfigManager.h" />
+    <ClInclude Include="ConnectAsync.h" />
+    <ClInclude Include="ConnectSync.h" />
+    <ClInclude Include="cssweb_charset.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="DetailWnd.h" />
+    <ClInclude Include="Direct2DRenderEngine.h" />
+    <ClInclude Include="EmptyWnd.h" />
+    <ClInclude Include="FileLog.h" />
+    <ClInclude Include="FinanceProduct.h" />
+    <ClInclude Include="GDIRenderEngine.h" />
+    <ClInclude Include="GridWnd.h" />
+    <ClInclude Include="HorizontalLayoutWnd.h" />
+    <ClInclude Include="importheader.h" />
+    <ClInclude Include="Indicator.h" />
+    <ClInclude Include="IRenderEngine.h" />
+    <ClInclude Include="KeyboardSpriteDlg.h" />
+    <ClInclude Include="KLineChartWnd.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="market.h" />
+    <ClInclude Include="NetworkManager.h" />
+    <ClInclude Include="PageContainerWnd.h" />
+    <ClInclude Include="PageInfo.h" />
+    <ClInclude Include="PageNavWnd.h" />
+    <ClInclude Include="PageWnd.h" />
+    <ClInclude Include="protobuf\communication.pb.h" />
+    <ClInclude Include="protobuf\file.pb.h" />
+    <ClInclude Include="protobuf\idxtemp.pb.h" />
+    <ClInclude Include="protobuf\pkgheader.pb.h" />
+    <ClInclude Include="protobuf\quotewarning.pb.h" />
+    <ClInclude Include="protobuf\stockpool.pb.h" />
+    <ClInclude Include="queue_threadpool\job_queue.h" />
+    <ClInclude Include="queue_threadpool\worker.h" />
+    <ClInclude Include="RankWnd.h" />
+    <ClInclude Include="RealtimeWnd.h" />
+    <ClInclude Include="RenderEngineCommon.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RowInfo.h" />
+    <ClInclude Include="safe_singleton.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabCtrlWnd.h" />
+    <ClInclude Include="TabInfo.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tcp_message.h" />
+    <ClInclude Include="TickChartWnd.h" />
+    <ClInclude Include="user_defined_msg.h" />
+    <ClInclude Include="VerticalLayoutWnd.h" />
+    <ClInclude Include="WebContentWnd.h" />
+    <ClInclude Include="WebSubjectWnd.h" />
+    <ClInclude Include="xml\pugiconfig.hpp" />
+    <ClInclude Include="xml\pugixml.hpp" />
+    <ClInclude Include="xml\rapidxml.hpp" />
+    <ClInclude Include="xml\rapidxml_iterators.hpp" />
+    <ClInclude Include="xml\rapidxml_print.hpp" />
+    <ClInclude Include="xml\rapidxml_utils.hpp" />
+    <ClInclude Include="errcode.h" />
+    <ClInclude Include="ZlibUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseContainerWnd.cpp" />
+    <ClCompile Include="BaseControlWnd.cpp" />
+    <ClCompile Include="BaseWnd.cpp" />
+    <ClCompile Include="ClientMFC.cpp" />
+    <ClCompile Include="ColInfo.cpp" />
+    <ClCompile Include="ColorUtil.cpp" />
+    <ClCompile Include="ConfigManager.cpp" />
+    <ClCompile Include="ConnectAsync.cpp" />
+    <ClCompile Include="ConnectSync.cpp" />
+    <ClCompile Include="cssweb_charset.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="DetailWnd.cpp" />
+    <ClCompile Include="Direct2DRenderEngine.cpp" />
+    <ClCompile Include="EmptyWnd.cpp" />
+    <ClCompile Include="FileLog.cpp" />
+    <ClCompile Include="FinanceProduct.cpp" />
+    <ClCompile Include="GDIRenderEngine.cpp" />
+    <ClCompile Include="GridWnd.cpp" />
+    <ClCompile Include="HorizontalLayoutWnd.cpp" />
+    <ClCompile Include="importlib.cpp" />
+    <ClCompile Include="Indicator.cpp" />
+    <ClCompile Include="IRenderEngine.cpp" />
+    <ClCompile Include="KeyboardSpriteDlg.cpp" />
+    <ClCompile Include="KLineChartWnd.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NetworkManager.cpp" />
+    <ClCompile Include="PageContainerWnd.cpp" />
+    <ClCompile Include="PageInfo.cpp" />
+    <ClCompile Include="PageNavWnd.cpp" />
+    <ClCompile Include="PageWnd.cpp" />
+    <ClCompile Include="protobuf\communication.pb.cc" />
+    <ClCompile Include="protobuf\file.pb.cc" />
+    <ClCompile Include="protobuf\idxtemp.pb.cc" />
+    <ClCompile Include="protobuf\pkgheader.pb.cc" />
+    <ClCompile Include="protobuf\quotewarning.pb.cc" />
+    <ClCompile Include="protobuf\stockpool.pb.cc" />
+    <ClCompile Include="RankWnd.cpp" />
+    <ClCompile Include="RealtimeWnd.cpp" />
+    <ClCompile Include="RowInfo.cpp" />
+    <ClCompile Include="safe_singleton.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabCtrlWnd.cpp" />
+    <ClCompile Include="TabInfo.cpp" />
+    <ClCompile Include="TickChartWnd.cpp" />
+    <ClCompile Include="VerticalLayoutWnd.cpp" />
+    <ClCompile Include="WebContentWnd.cpp" />
+    <ClCompile Include="WebSubjectWnd.cpp" />
+    <ClCompile Include="xml\pugixml.cpp" />
+    <ClCompile Include="ZlibUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ClientMFC.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="QuoteClient\images\tab_bg_head.bmp" />
+    <Image Include="QuoteClient\images\tab_bg_head.jpg" />
+    <Image Include="QuoteClient\images\tab_bg_middle.bmp" />
+    <Image Include="QuoteClient\images\tab_bg_middle1.jpg" />
+    <Image Include="QuoteClient\images\tab_bg_middle2.jpg" />
+    <Image Include="QuoteClient\images\tab_bg_sep.bmp" />
+    <Image Include="QuoteClient\images\tab_bg_tail.bmp" />
+    <Image Include="QuoteClient\images\tab_bg_tail.jpg" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\ClientMFC.ico" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="protobuf\communication.proto" />
+    <None Include="protobuf\file.proto" />
+    <None Include="protobuf\idxtemp.proto" />
+    <None Include="protobuf\pkgheader.proto" />
+    <None Include="protobuf\proto2cpp.bat" />
+    <None Include="protobuf\quotewarning.proto" />
+    <None Include="protobuf\stockpool.proto" />
+    <None Include="res\ClientMFC.rc2" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="tree_structure\tree.hh" />
+    <None Include="tree_structure\tree_util.hh" />
+    <None Include="客户端软件架构.vsd" />
+    <None Include="浏览器开发说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="QuoteClient\config.xml" />
+    <Xml Include="QuoteClient\grid.xml" />
+    <Xml Include="QuoteClient\page\Page.xml" />
+    <Xml Include="QuoteClient\page\Page0.xml" />
+    <Xml Include="QuoteClient\page\Page1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="k线视图说明.txt" />
+    <Text Include="QuoteClient\debug.log" />
+    <Text Include="嵌入交易.txt" />
+    <Text Include="无锁线程安全队列.txt" />
+    <Text Include="模式.txt" />
+    <Text Include="绘图引擎.txt" />
+    <Text Include="表格开发计划.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ClientMFC.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

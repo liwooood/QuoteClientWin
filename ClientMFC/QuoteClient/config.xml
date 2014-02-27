@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <RunMode>0</RunMode>
+  
+  <server>
+<!--       
+    <quote>221.226.125.220:8084</quote>
+-->
+
+    
+<quote>210.13.95.57:9001</quote>
+
+
+<trade></trade>
+  </server>
+
+  <proxy>
+    <!--1.http 2.socks4 3.socks5-->
+    <type>1</type>
+    <ip>127.0.0.1</ip>
+    <port>8080</port>
+    <auth></auth>
+    <username></username>
+    <password></password>
+  </proxy>
+</config>

@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="崩溃报告">
+      <UniqueIdentifier>{ce8c67a1-ef2e-4ac9-a211-acb81b0f7e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="安装包InnoSetup">
+      <UniqueIdentifier>{ac4b0fbb-2d06-42b4-a7f4-ba5008e1cbf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据管理层">
+      <UniqueIdentifier>{39846f6f-6505-472b-b312-70d795cbe50c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置文件">
+      <UniqueIdentifier>{e9ad19d3-96dd-4019-a6c2-12c147b9b544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文档">
+      <UniqueIdentifier>{c73a02c9-ea43-4ae2-a552-4a926c08309d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="内存泄漏vld">
+      <UniqueIdentifier>{d0b8fcc4-bdb2-41a4-a798-10c3446ce7b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据管理层\本地存储 %28支持离线访问%29">
+      <UniqueIdentifier>{d8c0db6a-44a7-4e5d-a889-6db6f57ac4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网络层">
+      <UniqueIdentifier>{fa4a7269-69af-4715-b60e-0a9450e2577b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="并行计算">
+      <UniqueIdentifier>{b9f00a4f-2f23-48c9-9787-e92892f8d8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库">
+      <UniqueIdentifier>{99338325-f9dc-417a-a497-7c5791254d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库\xml">
+      <UniqueIdentifier>{5e5a0931-0039-404c-a143-90fca7700555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="日志">
+      <UniqueIdentifier>{4905acd2-98ac-4c56-a905-c032beaacce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="主框架">
+      <UniqueIdentifier>{5cfbb272-2daa-4165-ba26-14fba2da66f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="嵌入交易">
+      <UniqueIdentifier>{2c0142c0-84ea-4cc5-b0ab-e2cf6a0ebedf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="线程安全队列">
+      <UniqueIdentifier>{5e397f60-3c63-4d7e-b5cf-0c4d54cc97ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="键盘精灵无模式对话框">
+      <UniqueIdentifier>{67771c82-0fbc-40bf-86fc-a1ad8fa2a331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="绘图引擎">
+      <UniqueIdentifier>{eb915dad-03de-49c6-9ea0-4e30c25a34a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="崩溃报告\生成CrashRpt">
+      <UniqueIdentifier>{9fc385b2-7112-4169-957a-ffce8e167f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="崩溃报告\上传libcurl">
+      <UniqueIdentifier>{60fe80c7-d85f-4976-b87d-147bd245c3f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工作线程池">
+      <UniqueIdentifier>{e4230022-554e-4f07-b5ea-29be9ea5a837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="内存池">
+      <UniqueIdentifier>{693a6f62-716e-4615-89bb-2b9ce4803b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公用类">
+      <UniqueIdentifier>{4aac3f07-04e2-4f1b-baa1-27b98b5daa17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="压缩zlib">
+      <UniqueIdentifier>{c569819e-ba05-4f5d-b6ac-bc8acab195c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层">
+      <UniqueIdentifier>{4c7cd205-ccc4-4f4e-9707-e3a1a0a1b23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件">
+      <UniqueIdentifier>{6268d5c7-5545-453c-a8f3-88fbb2191251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\页面">
+      <UniqueIdentifier>{c6dc064b-bb19-4c8b-90c5-7e432accdd7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\页面容器">
+      <UniqueIdentifier>{be897173-d591-4e3b-bc4e-8c033780b0a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\浏览器组件">
+      <UniqueIdentifier>{d245d689-9b29-4024-8569-3c16303ccdf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\综合排名">
+      <UniqueIdentifier>{fab77fcd-c96d-4933-b145-a41dc8c8c542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\5.成交明细组件">
+      <UniqueIdentifier>{4aa6373f-ebc4-4d8f-8d6a-f2a67bbe8215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\4.盘口信息组件">
+      <UniqueIdentifier>{6c904c45-5163-41a0-82e5-7e24aad6cb8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\3.K线图形组件">
+      <UniqueIdentifier>{2f072498-17b7-4040-8a5c-d831ffa213ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\2.分时图形组件">
+      <UniqueIdentifier>{6f003f0b-becc-4b6b-9047-541350ee40ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\1.表格组件">
+      <UniqueIdentifier>{07c221d9-0028-446b-bc8e-511cb40b244d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\布局容器">
+      <UniqueIdentifier>{e7910b77-e071-4f25-886c-9161eefbd867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\空窗口组件">
+      <UniqueIdentifier>{06e3b9f6-61ef-4505-ae07-da1aebd1d993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库\xml\rapid">
+      <UniqueIdentifier>{71371393-c18d-4447-ac83-168e7eb9b388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="第三方库\xml\pugi">
+      <UniqueIdentifier>{f0dcd19a-d77b-4211-b4bf-16f84e0fe33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="动画引擎">
+      <UniqueIdentifier>{16a74667-7fb4-4bd7-bea0-aaedaa2dd13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\页面\数据结构-树">
+      <UniqueIdentifier>{1a38f8bb-e28b-42ad-8de9-31e362d1d98b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protobuf">
+      <UniqueIdentifier>{13bbf051-f940-46f0-b9d1-aa0511c11795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="字符集转换ICU">
+      <UniqueIdentifier>{f5714c64-1515-40ac-880b-84e512f9962e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自选股">
+      <UniqueIdentifier>{81067fb8-3798-4a5e-88bc-b40f54fb1e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自定义消息">
+      <UniqueIdentifier>{368c2831-6850-40e7-bb5e-3d15503ec1f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面层\控件\1.表格组件\标签组件">
+      <UniqueIdentifier>{fbb83ec4-0dd7-4d8e-95aa-90b56f15300a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="线程安全单实例">
+      <UniqueIdentifier>{78bb59a0-30e9-40a8-9c07-24e4ba72eed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公式引擎">
+      <UniqueIdentifier>{cc1bad46-efd6-4436-a0d7-13d64508fb10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GridWnd.h">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </ClInclude>
+    <ClInclude Include="TickChartWnd.h">
+      <Filter>界面层\控件\2.分时图形组件</Filter>
+    </ClInclude>
+    <ClInclude Include="KLineChartWnd.h">
+      <Filter>界面层\控件\3.K线图形组件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMFC.h">
+      <Filter>主框架</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>主框架</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>主框架</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>主框架</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>主框架</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>数据管理层</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigManager.h">
+      <Filter>配置文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailWnd.h">
+      <Filter>界面层\控件\5.成交明细组件</Filter>
+    </ClInclude>
+    <ClInclude Include="RealtimeWnd.h">
+      <Filter>界面层\控件\4.盘口信息组件</Filter>
+    </ClInclude>
+    <ClInclude Include="WebContentWnd.h">
+      <Filter>界面层\控件\浏览器组件</Filter>
+    </ClInclude>
+    <ClInclude Include="RankWnd.h">
+      <Filter>界面层\控件\综合排名</Filter>
+    </ClInclude>
+    <ClInclude Include="WebSubjectWnd.h">
+      <Filter>界面层\控件\浏览器组件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManager.h">
+      <Filter>网络层</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\communication.pb.h">
+      <Filter>Protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\file.pb.h">
+      <Filter>Protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\idxtemp.pb.h">
+      <Filter>Protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\pkgheader.pb.h">
+      <Filter>Protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\quotewarning.pb.h">
+      <Filter>Protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\stockpool.pb.h">
+      <Filter>Protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLog.h">
+      <Filter>日志</Filter>
+    </ClInclude>
+    <ClInclude Include="importheader.h">
+      <Filter>第三方库</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectSync.h">
+      <Filter>网络层</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectAsync.h">
+      <Filter>网络层</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardSpriteDlg.h">
+      <Filter>键盘精灵无模式对话框</Filter>
+    </ClInclude>
+    <ClInclude Include="GDIRenderEngine.h">
+      <Filter>绘图引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct2DRenderEngine.h">
+      <Filter>绘图引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderEngine.h">
+      <Filter>绘图引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="queue_threadpool\worker.h">
+      <Filter>工作线程池</Filter>
+    </ClInclude>
+    <ClInclude Include="queue_threadpool\job_queue.h">
+      <Filter>线程安全队列</Filter>
+    </ClInclude>
+    <ClInclude Include="FinanceProduct.h">
+      <Filter>公用类</Filter>
+    </ClInclude>
+    <ClInclude Include="market.h">
+      <Filter>公用类</Filter>
+    </ClInclude>
+    <ClInclude Include="errcode.h">
+      <Filter>公用类</Filter>
+    </ClInclude>
+    <ClInclude Include="ZlibUtil.h">
+      <Filter>压缩zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorUtil.h">
+      <Filter>绘图引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngineCommon.h">
+      <Filter>绘图引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="PageNavWnd.h">
+      <Filter>界面层\页面容器</Filter>
+    </ClInclude>
+    <ClInclude Include="PageContainerWnd.h">
+      <Filter>界面层\页面容器</Filter>
+    </ClInclude>
+    <ClInclude Include="PageWnd.h">
+      <Filter>界面层\页面</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalLayoutWnd.h">
+      <Filter>界面层\布局容器</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalLayoutWnd.h">
+      <Filter>界面层\布局容器</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseContainerWnd.h">
+      <Filter>界面层\布局容器</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseWnd.h">
+      <Filter>界面层</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseControlWnd.h">
+      <Filter>界面层\控件</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyWnd.h">
+      <Filter>界面层\控件\空窗口组件</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml_utils.hpp">
+      <Filter>第三方库\xml\rapid</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml_print.hpp">
+      <Filter>第三方库\xml\rapid</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml_iterators.hpp">
+      <Filter>第三方库\xml\rapid</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\rapidxml.hpp">
+      <Filter>第三方库\xml\rapid</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\pugiconfig.hpp">
+      <Filter>第三方库\xml\pugi</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\pugixml.hpp">
+      <Filter>第三方库\xml\pugi</Filter>
+    </ClInclude>
+    <ClInclude Include="PageInfo.h">
+      <Filter>界面层\页面容器</Filter>
+    </ClInclude>
+    <ClInclude Include="ColInfo.h">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </ClInclude>
+    <ClInclude Include="RowInfo.h">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </ClInclude>
+    <ClInclude Include="cssweb_charset.h">
+      <Filter>字符集转换ICU</Filter>
+    </ClInclude>
+    <ClInclude Include="user_defined_msg.h">
+      <Filter>自定义消息</Filter>
+    </ClInclude>
+    <ClInclude Include="TabInfo.h">
+      <Filter>界面层\控件\1.表格组件\标签组件</Filter>
+    </ClInclude>
+    <ClInclude Include="TabCtrlWnd.h">
+      <Filter>界面层\控件\1.表格组件\标签组件</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_singleton.h">
+      <Filter>线程安全单实例</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_message.h">
+      <Filter>网络层</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicator.h">
+      <Filter>界面层\控件\3.K线图形组件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GridWnd.cpp">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </ClCompile>
+    <ClCompile Include="TickChartWnd.cpp">
+      <Filter>界面层\控件\2.分时图形组件</Filter>
+    </ClCompile>
+    <ClCompile Include="KLineChartWnd.cpp">
+      <Filter>界面层\控件\3.K线图形组件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientMFC.cpp">
+      <Filter>主框架</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>主框架</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>主框架</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>数据管理层</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigManager.cpp">
+      <Filter>配置文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DetailWnd.cpp">
+      <Filter>界面层\控件\5.成交明细组件</Filter>
+    </ClCompile>
+    <ClCompile Include="RealtimeWnd.cpp">
+      <Filter>界面层\控件\4.盘口信息组件</Filter>
+    </ClCompile>
+    <ClCompile Include="WebContentWnd.cpp">
+      <Filter>界面层\控件\浏览器组件</Filter>
+    </ClCompile>
+    <ClCompile Include="RankWnd.cpp">
+      <Filter>界面层\控件\综合排名</Filter>
+    </ClCompile>
+    <ClCompile Include="WebSubjectWnd.cpp">
+      <Filter>界面层\控件\浏览器组件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkManager.cpp">
+      <Filter>网络层</Filter>
+    </ClCompile>
+    <ClCompile Include="protobuf\communication.pb.cc">
+      <Filter>Protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="protobuf\file.pb.cc">
+      <Filter>Protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="protobuf\idxtemp.pb.cc">
+      <Filter>Protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="protobuf\pkgheader.pb.cc">
+      <Filter>Protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="protobuf\quotewarning.pb.cc">
+      <Filter>Protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="protobuf\stockpool.pb.cc">
+      <Filter>Protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLog.cpp">
+      <Filter>日志</Filter>
+    </ClCompile>
+    <ClCompile Include="importlib.cpp">
+      <Filter>第三方库</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectSync.cpp">
+      <Filter>网络层</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectAsync.cpp">
+      <Filter>网络层</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardSpriteDlg.cpp">
+      <Filter>键盘精灵无模式对话框</Filter>
+    </ClCompile>
+    <ClCompile Include="GDIRenderEngine.cpp">
+      <Filter>绘图引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct2DRenderEngine.cpp">
+      <Filter>绘图引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="IRenderEngine.cpp">
+      <Filter>绘图引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="FinanceProduct.cpp">
+      <Filter>公用类</Filter>
+    </ClCompile>
+    <ClCompile Include="ZlibUtil.cpp">
+      <Filter>压缩zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorUtil.cpp">
+      <Filter>绘图引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="PageNavWnd.cpp">
+      <Filter>界面层\页面容器</Filter>
+    </ClCompile>
+    <ClCompile Include="PageContainerWnd.cpp">
+      <Filter>界面层\页面容器</Filter>
+    </ClCompile>
+    <ClCompile Include="PageWnd.cpp">
+      <Filter>界面层\页面</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalLayoutWnd.cpp">
+      <Filter>界面层\布局容器</Filter>
+    </ClCompile>
+    <ClCompile Include="HorizontalLayoutWnd.cpp">
+      <Filter>界面层\布局容器</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseContainerWnd.cpp">
+      <Filter>界面层\布局容器</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseWnd.cpp">
+      <Filter>界面层</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseControlWnd.cpp">
+      <Filter>界面层\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyWnd.cpp">
+      <Filter>界面层\控件\空窗口组件</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\pugixml.cpp">
+      <Filter>第三方库\xml\pugi</Filter>
+    </ClCompile>
+    <ClCompile Include="PageInfo.cpp">
+      <Filter>界面层\页面容器</Filter>
+    </ClCompile>
+    <ClCompile Include="ColInfo.cpp">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </ClCompile>
+    <ClCompile Include="RowInfo.cpp">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </ClCompile>
+    <ClCompile Include="cssweb_charset.cpp">
+      <Filter>字符集转换ICU</Filter>
+    </ClCompile>
+    <ClCompile Include="TabInfo.cpp">
+      <Filter>界面层\控件\1.表格组件\标签组件</Filter>
+    </ClCompile>
+    <ClCompile Include="TabCtrlWnd.cpp">
+      <Filter>界面层\控件\1.表格组件\标签组件</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_singleton.cpp">
+      <Filter>线程安全单实例</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicator.cpp">
+      <Filter>界面层\控件\3.K线图形组件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ClientMFC.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\buttons.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\filelarge.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\filesmall.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\writelarge.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\writesmall.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ClientMFC.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_head.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_middle1.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_middle2.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_tail.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_sep.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_head.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_middle.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="QuoteClient\images\tab_bg_tail.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ClientMFC.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="客户端软件架构.vsd">
+      <Filter>文档</Filter>
+    </None>
+    <None Include="浏览器开发说明.txt">
+      <Filter>界面层\控件\浏览器组件</Filter>
+    </None>
+    <None Include="protobuf\communication.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="protobuf\file.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="protobuf\idxtemp.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="protobuf\pkgheader.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="protobuf\proto2cpp.bat">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="protobuf\quotewarning.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="protobuf\stockpool.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="tree_structure\tree.hh">
+      <Filter>界面层\页面\数据结构-树</Filter>
+    </None>
+    <None Include="tree_structure\tree_util.hh">
+      <Filter>界面层\页面\数据结构-树</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="QuoteClient\config.xml">
+      <Filter>配置文件</Filter>
+    </Xml>
+    <Xml Include="QuoteClient\page\Page0.xml">
+      <Filter>界面层\页面</Filter>
+    </Xml>
+    <Xml Include="QuoteClient\page\Page1.xml">
+      <Filter>界面层\页面</Filter>
+    </Xml>
+    <Xml Include="QuoteClient\page\Page.xml">
+      <Filter>界面层\页面</Filter>
+    </Xml>
+    <Xml Include="QuoteClient\grid.xml">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="嵌入交易.txt">
+      <Filter>嵌入交易</Filter>
+    </Text>
+    <Text Include="k线视图说明.txt">
+      <Filter>界面层\控件\3.K线图形组件</Filter>
+    </Text>
+    <Text Include="QuoteClient\debug.log">
+      <Filter>日志</Filter>
+    </Text>
+    <Text Include="无锁线程安全队列.txt">
+      <Filter>线程安全队列</Filter>
+    </Text>
+    <Text Include="绘图引擎.txt">
+      <Filter>绘图引擎</Filter>
+    </Text>
+    <Text Include="模式.txt">
+      <Filter>文档</Filter>
+    </Text>
+    <Text Include="表格开发计划.txt">
+      <Filter>界面层\控件\1.表格组件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

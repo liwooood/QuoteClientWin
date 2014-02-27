@@ -1,0 +1,62 @@
+package quotewarning;
+
+//ÐÂÔöÔ¤¾¯
+message AddWarningRequest{
+	required string custid = 1;
+	optional string orgid = 2;
+	required string secucode = 3;
+	required int32 exchange = 4;
+	optional float pricehigh = 5;
+	optional float pricelow = 6;
+	optional float rangeup = 7;
+	optional float rangedown = 8;
+}
+
+message AddWarningResponse{
+}
+
+//¸üÐÂÔ¤¾¯
+message UpdateWarningRequest{
+	required string custid = 1;
+	optional string orgid = 2;
+	required string secucode = 3;
+	required int32 exchange = 4;
+	optional float pricehigh = 5;
+	optional float pricelow = 6;
+	optional float rangeup = 7;
+	optional float rangedown = 8;
+}
+
+message UpdateWarningResponse{
+}
+
+//É¾³ýÔ¤¾¯
+message RemoveWarningRequest{
+	required string custid = 1;
+	optional string orgid = 2;
+	required string secucode = 3;
+	required int32 exchange = 4;
+}
+
+message RemoveWarningResponse{
+}
+
+//²éÑ¯Ô¤¾¯
+message QueryWarningRequest{
+	required string custid = 1;
+	required string orgid = 2;
+	optional string secucode = 3;
+	optional int32 exchange = 4;
+}
+
+message QueryWarningResponse{
+	message Stock{
+		required string secucode = 1;
+		required int32 exchange = 2;
+		optional float pricehigh = 3;
+		optional float pricelow = 4;
+		optional float rangeup = 5;
+		optional float rangedown = 6;
+	}
+	repeated Stock stock = 1;
+}

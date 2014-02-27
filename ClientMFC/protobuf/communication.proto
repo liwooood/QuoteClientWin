@@ -1,0 +1,322 @@
+package quote;
+
+//实时行情
+message RealTimeRequest{
+	repeated string stockcode=1;
+}
+
+message RealTimeResponse{
+	message RealTime{
+		required string quotetime = 1;
+		required string markettime = 2;
+		required string secucode = 3;
+		required int32 exchange = 4;
+		required bool tp = 5;
+		required float open = 6;
+		required float high = 7;
+		required float low = 8;
+		required float close = 9;
+		required int64 vol = 10;
+		required double amt = 11;
+		optional float askprice5 = 12;
+		optional int32 askvol5 = 13;
+		optional float askprice4 = 14;
+		optional int32 askvol4 = 15;
+		required float askprice3 = 16;
+		required int32 askvol3 = 17;
+		required float askprice2 = 18;
+		required int32 askvol2 = 19;
+		required float askprice1 = 20;
+		required int32 askvol1 = 21;
+		required float bidprice1 = 22;
+		required int32 bidvol1 = 23;
+		required float bidprice2 = 24;
+		required int32 bidvol2 = 25;
+		required float bidprice3 = 26;
+		required int32 bidvol3 = 27;
+		optional float bidprice4 = 28;
+		optional int32 bidvol4 = 29;
+		optional float bidprice5 = 30;
+		optional int32 bidvol5 = 31;
+		required float zf = 32;
+		required float zd = 33;
+		required float zt = 34;
+		required float dt = 35;
+		required float hs = 36;
+		required float amp = 37;
+		required float lb = 38;
+		required float wb = 39;
+		required int32 wc = 40;
+		required string nwp = 41;
+		required int32 np = 42;
+		required int32 wp = 43;
+		required int32 sp = 44;
+		required int32 xs = 45;
+		required int32 actualxs = 46;
+		required float xe = 47;
+		required int32 detailid = 48;
+		required bool sg = 49;
+		optional double a = 50;
+		optional double b = 51;
+		optional double fund = 52;
+		optional double warrant = 53;
+		optional double bond = 54;
+		optional double govbond = 55;
+		optional int32 zj = 56;
+		optional int32 pj = 57;
+		optional int32 dj = 58;
+		optional int32 zja = 59;
+		optional int32 pja = 60;
+		optional int32 dja = 61;
+		optional int32 zjb = 62;
+		optional int32 pjb = 63;
+		optional int32 djb = 64;
+		optional int32 zjfund = 65;
+		optional int32 pjfund = 66;
+		optional int32 djfund = 67;
+		optional int32 zjmid = 68;
+		optional int32 pjmid = 69;
+		optional int32 djmid = 70;
+		optional int32 zjtrad = 71;
+		optional int32 pjtrad = 72;
+		optional int32 djtrad = 73;
+		optional float dpdksp1 = 74;
+		optional float dpdksp = 75;
+		optional float dpdkbp1 = 76;
+		optional float dpdkbp = 77;
+		optional float leadingindex = 78;
+	}
+	repeated RealTime realtime = 1;
+}
+
+//分类报价
+message Grid{	
+	required string secucode = 1;
+	required int32 exchange = 2;
+	required int32 secutype = 3;
+	required int32 tp = 4;
+	required float open = 5;
+	required float high = 6;
+	required float low = 7;
+	required float close = 8;
+	required int64 vol = 9;
+	required double amt = 10;
+	required float askprice1 = 11;
+	required float bidprice1 = 12;
+	required float zf = 13;
+	required float zd = 14;
+	required float hs = 15;
+	required float amp = 16;
+	required float lb = 17;
+	required float wb = 18;
+	required int32 wc = 19;
+	required int32 xs = 20;
+	required string nwp = 21;
+}
+message GridRequest{
+	repeated string stockcode=1;
+	enum Field{
+		ZQDM = 1;
+		JRKP = 2;
+		ZGCJ = 3;
+		ZDCJ = 4;
+		ZJCJ = 5;
+		CJSL = 6;
+		CJJE = 7;
+		BJW1= 8;
+		SJW1 = 9;
+		ZF = 10;
+		ZD = 11;
+		HS = 12;
+		AMP = 13;
+		LB = 14;
+		WB = 15;
+		WC = 16;
+		ZRSP = 17;
+		XS = 18;
+	}
+	optional Field field=2;
+	enum Sort{
+		ASC = 1;
+		DESC = 2;
+	}
+	optional Sort sort=3;
+}
+message GridResponse{
+	repeated Grid grid = 1;
+}
+
+//分类报价排序
+message GridSortRequest{
+	repeated int32 secutype=1;
+  required bool block=2;
+	optional int32 page=3;
+	optional int32 startidx=4;
+	required int32 len=5;
+	enum Field{
+		ZQDM = 1;
+		JRKP = 2;
+		ZGCJ = 3;
+		ZDCJ = 4;
+		ZJCJ = 5;
+		CJSL = 6;
+		CJJE = 7;
+		BJW1= 8;
+		SJW1 = 9;
+		ZF = 10;
+		ZD = 11;
+		HS = 12;
+		AMP = 13;
+		LB = 14;
+		WB = 15;
+		WC = 16;
+		ZRSP = 17;
+		XS = 18;
+	}
+	required Field field=6;
+	enum Sort{
+		ASC = 1;
+		DESC = 2;
+	}
+	required Sort sort=7;
+}
+message GridSortResponse{
+	repeated Grid grid = 1;
+}
+
+//成交明细
+message DetailRequest{
+	required string stockcode=1;
+	required int32 len=2;
+	optional int32 id=3;
+	enum Direction{
+		FORWARD = 1;
+		BACKWARD = 2;
+	}
+	optional Direction direction=4;
+}
+
+//分时
+message MinRequest{
+	required string stockcode=1;
+	repeated int32 day=2;
+}
+
+//状态栏行情
+message StatusRequest{
+	repeated string stockcode=1;
+}
+
+message StatusResponse{
+	message Status{
+		required string secucode = 1;
+		required int32 exchange = 2;
+		required float close = 3;
+		required float zf = 4;
+		required float zd = 5;
+		required double amt = 6;
+	}
+	repeated Status status = 1;
+}
+
+//综合排名
+message ZhpmRequest{
+	repeated int32 secutype = 1;
+	repeated int32 zhpmtype = 2;
+	required int32 len = 3;
+}
+
+message ZhpmResponse{	
+	message Zhpm{
+		required int32 type = 1;		
+		message ZhpmStock{
+			required string secucode = 1;
+			required int32 exchange = 2;
+			required float close = 3;
+			required float zf = 4;
+			required double value = 5;
+		}
+		repeated ZhpmStock zhpmstock = 2;
+	}
+	repeated Zhpm zhpm = 1;
+}
+
+//k线数据
+message CandleRequest{
+	required string stockcode = 1;
+	enum CandleCycle{
+		DAY = 1;
+		WEEK = 2;
+		MONTH = 3;
+		YEAR = 4;
+		MIN1 = 5;
+		MIN5 = 6;
+		MIN15 = 7;
+		MIN30 = 8;
+		MIN60 = 9;
+	}
+	required CandleCycle candlecycle = 2;
+	required int32 len = 3;
+	optional string date = 4;
+	optional int32 id = 5;
+	enum Direction{
+		FORWARD = 1;
+		BACKWARD = 2;
+	}
+	required Direction direction=6;
+}
+
+
+//证券代码列表
+message StockRequest{
+	required int32 exchange = 1;
+}
+
+//财务数据
+message FinanceRequest{
+	optional int32 exchange = 1;
+}
+
+//权息数据
+message WeightRequest{
+	required string secucode = 1;
+}
+
+//板块分类
+message BlockRequest{
+	enum Block{
+		BLOCK = 1;
+		BLOCKDETAIL = 2;
+	}
+	required Block block= 1;
+}
+
+//大单
+message LargeRequest{
+	required int32 len= 1;
+}
+
+//分价
+message PriceRequest{
+	required string stockcode=1;
+	required int32 len=2;
+	optional float close=3;
+	enum Direction{
+		FORWARD = 1;
+		BACKWARD = 2;
+	}
+	optional Direction direction=4;
+}
+
+message PriceResponse{
+	message Price{
+		required float close = 1;
+		required double sumxsb = 2;
+		required double sumxeb = 3;
+		required double sumxs = 4;
+		required double sumxe = 5;
+	}
+	required double maxsumxs = 1;
+	required double maxsumxe = 2;
+	repeated Price price = 3;
+}

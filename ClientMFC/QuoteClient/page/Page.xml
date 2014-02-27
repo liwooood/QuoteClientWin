@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+  
+  <page>
+    <title>国内证券一</title>
+    <xmlfile>e:/quote/Client/ClientMFC/QuoteClient/page/page0.xml</xmlfile>
+  </page>
+
+  <page>
+    <title>国内证券二</title>
+    <xmlfile>e:/quote/Client/ClientMFC/QuoteClient/page/page1.xml</xmlfile>
+  </page>
+
+</pages>

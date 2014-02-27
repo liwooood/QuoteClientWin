@@ -1,0 +1,4 @@
+                     gdi
+CWnd --> engine -->
+                     direct2d --> com
+					          --> mfc (不跨平台win8, wp8，不采用)

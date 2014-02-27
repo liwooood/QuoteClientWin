@@ -1,0 +1,25 @@
+INTERNET_PROXY_INFO proxy;
+
+proxy.dwAccessType = INTERNET_OPEN_TYPE_PROXY;
+
+proxy.lpszProxy = "172.16.1.120:8888";
+
+proxy.lpszProxyBypass = NULL;
+
+ 
+
+HRESULT hr = ::UrlMkSetSessionOption(INTERNET_OPTION_PROXY,&proxy,sizeof(proxy),0);
+
+if(S_OK == hr)
+
+{
+
+Navigate2(_T("http://172.16.1.46/1.php"),NULL,NULL);
+
+}else{
+
+AfxMessageBox("Proxy Error");
+
+}
+-------------------’ ∫≈≤ø∑÷------------------------
+m_Web.Navigate("http://00848303:19890503@www.baidu.com",NULL,NULL,NULL,NULL);
